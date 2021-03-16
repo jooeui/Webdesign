@@ -1,3 +1,20 @@
+jQuery(document).ready(function(){
+    $(".nav > ul > li").mouseover(function(){
+        $(this).find(".submenu").stop().slideDown(400);
+    }).mouseout(function(){
+        $(this).find(".submenu").stop().slideUp(400);
+    });
+    
+    $(".layerPopup").click(function(){
+        $(".layer").show();
+        $(".layer-bg").show();
+    });
+    $(".layer .close").click(function(){
+        $(".layer").hide();
+        $(".layer-bg").hide();
+    });
+});
+
 var tabBtn = $(".tab-btn > ul > li");
 var tabCont = $(".tab-cont > div");
 

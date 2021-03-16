@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>탭 메뉴</title>
+    <title>이미지 슬라이드(위아래)</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="script/jquery-3.6.0.js"></script>
     <script src="script/script.js" defer type="text/javascript"></script>
@@ -53,7 +53,20 @@
 
         <!-- banner -->
         <section id="banner">
-            <h2>이미지 슬라이드</h2>
+            <div class="slideList">
+                <div class="slideImg">
+                    <h2>이미지1</h2>
+                    <img src="images/ban01.jpg" alt="이미지">
+                </div>
+                <div class="slideImg">
+                    <h2>이미지2</h2>
+                    <img src="images/ban02.jpg" alt="이미지">
+                </div>
+                <div class="slideImg">
+                    <h2>이미지3</h2>
+                    <img src="images/ban03.jpg" alt="이미지">
+                </div>
+            </div>
         </section>
 
         <!-- contents -->
@@ -84,7 +97,7 @@
                 <h3>갤러리</h3>
             </div>
             <div class="cont3">
-                <h3>팝업</h3>
+                <h3 class="layerPopup">팝업</h3>
             </div>
         </section>
 
@@ -100,6 +113,13 @@
                 <h3>SNS</h3>
             </div>
         </footer>
+
+        <!-- 레이어 팝업 -->
+        <div class="layer-bg"></div>
+        <div class="layer">
+            <h2>Title</h2>
+            <a href="#" class="close">닫기</a>
+        </div>
     </div>
 </body>
 
