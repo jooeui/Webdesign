@@ -1,0 +1,43 @@
+/* reset */
+* {margin: 0 auto; padding: 0; list-style: none; color: #333333;}
+a {text-decoration: none; display: block;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+
+/* 레이아웃 */
+#wrap {width: 1000px; background: #ffffff; font-size: 20px;}
+
+#side {
+    float: left;
+    width: 200px;
+    height: 650px;
+}
+#content {
+    float: left;
+    width: 800px;
+    height: 650px;
+    background: #ddd;
+}
+
+/* header */
+#side .logo {width: 200px; line-height: 100px; height: 100px; text-align: center; background: #999;}
+#side .nav {width: 200px; height: 550px; background: #888;}
+#side .nav li {position: relative; text-align: center; background: #aaaaaa;}
+#side .nav li a {padding: 10px; color: #ffffff;}
+#side .nav li a:hover {background: rgba(0,0,0,0.3);}
+#side .nav li ul.submenu {display:none; position: absolute; right: -150px; top: 0; background: rgba(0,0,0,0.3); width: 150px;}
+
+/* banner */
+#banner {width: 800px; height: 350px; background: #777;}
+
+/* contents */
+#contents {}
+#contents > div {float: left; width: 33.33333%; height: 200px;}
+#contents > .cont1 {background: #666;}
+#contents > .cont2 {background: #555;}
+#contents > .cont3 {background: #444;}
+
+/* footer */
+#footer {}
+#footer .foot1 {float: left; width: 100px; height: 100px; background: #333;}
+#footer .foot2 {float: left; width: 700px; height: 50px; background: #222;}
+#footer .foot3 {float: left; width: 700px; height: 50px; background: #111;}
