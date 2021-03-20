@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은 고딕";
+    color: #222328;
+}
+body {
+    width: 1000px;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
+.clearfix:before, .clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+} 
+
+/* header */
+header {
+    float: left;
+}
+header > .top {
+    float: left;
+    height: 650px;
+    width: 200px;
+}
+.top > .logo {
+    float: left;
+    height: 40px;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* menu */
+.top > .menu {
+    float: left;
+    width: 200px;
+    text-align: center;
+}
+.navi > li {
+    float: left;
+    width: 160px;
+    margin: 0 20px;
+}
+.navi > li > a {
+    height: 40px;
+    width: 160px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #222328;
+    color: #ffffff;
+}
+.navi > li > a:hover {
+    background-color: #a02828;
+    color: #ffffff;
+}
+.submenu {
+    float: left;
+    width: 100%;
+    display: none;
+}
+.submenu > li > a {
+    height: 40px;
+    width: 160px;
+    line-height: 40px;
+    font-size: 14px;
+    background-color: #dddddd;
+}
+.submenu > li > a:hover {
+    background-color: rgba(0,0,0,0.4);
+    color: #ffffff;
+}
+
+/* imgslide */
+.imgslide {
+    float: right;
+    height: 350px;
+    width: 800px;
+}
+
+/* contents */
+.contents {
+    float: right;
+    height: 200px;
+    width: 800px;
+}
+.notice {
+    float: left;
+    height: 200px;
+    width: 300px;
+}
+.gallery {
+    float: left;
+    height: 200px;
+    width: 300px;
+}
+.shortcut {
+    float: left;
+    height: 200px;
+    width: 200px;
+}
+
+/* footer */
+footer {
+    float: right;
+}
+footer > .bottom {
+    float: left;
+    height: 100px;
+    width: 800px;
+}
+.bottom > .copy {
+    float: left;
+    height: 100px;
+    width: 600px;
+}
+.bottom > .site {
+    float: right;
+    height: 100px;
+    width: 200px
+}
+.site > .sns {
+    float: right;
+    height: 50px;
+    width: 200px;
+}
+.site > .familysite {
+    float: right;
+    height: 50px;
+    width: 200px;
+}
