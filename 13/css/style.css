@@ -84,6 +84,33 @@ header > .top {
     float: right;
     height: 350px;
     width: 800px;
+    position: relative;
+}
+.imgslide > a {
+    height: 350px;
+    width: 800px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.imgslide img {
+    height: 350px;
+    width: 800px;
+    object-fit: cover;
+}
+.imgtext {
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    margin: -25px 0 0 -150px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 50px;
+    background-color: rgba(40,40,40,0.3);
+    left: 50%;
+    top: 50%;
 }
 
 /* contents */
@@ -92,20 +119,100 @@ header > .top {
     height: 200px;
     width: 800px;
 }
+.tab {
+    float: left;
+    width: 300px;
+}
+.tab h4 {
+    float: left;
+    height: 30px;
+    width: 80px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #000000;
+}
+/* notice */
 .notice {
     float: left;
-    height: 200px;
-    width: 300px;
+    height: 180px;
+    width: 290px;
+    margin: 10px 10px 0 0;
 }
+.notice > div {
+    width: 290px;
+    border-bottom: 1px solid #cccccc;
+}
+.notice ul {
+    float: left;
+    height: 30px;
+    width: 290px;
+    line-height: 30px;
+    font-size: 13px;
+}
+.notice li a {
+    padding: 0 5px;
+}
+.notice li span {
+    float: right;
+}
+.notice li:nth-child(2n) {
+    background-color: #cccccc;
+}
+.notice li:hover {
+    font-weight: bold;
+}
+/* gallery */
 .gallery {
     float: left;
-    height: 200px;
-    width: 300px;
+    height: 180px;
+    width: 290px;
+    margin: 10px 10px 0 0;
+}
+.gallery ul {
+    float: left;
+    width: 290px;
+}
+.gallery > div {
+    width: 290px;
+    border-bottom: 1px solid #cccccc;
+}
+.gallery ul li{
+    float: left;
+    padding: 10px;
+}
+.gallery img {
+    height: 100px;
+    width: 76px;
+    object-fit: cover;
 }
 .shortcut {
+    position: relative;
     float: left;
     height: 200px;
     width: 200px;
+}
+.shortcut img {
+    float: right;
+    margin: 10px 0;
+    height: 180px;
+    width: 200px;
+}
+.sctext {
+    float: right;
+    height: 30px;
+    width: 100px;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 30px;
+    background-color: rgba(40,40,40,0.3);
+    border-radius: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 /* footer */
@@ -125,7 +232,7 @@ footer > .bottom {
 .bottom > .site {
     float: right;
     height: 100px;
-    width: 200px
+    width: 200px;
 }
 .site > .sns {
     float: right;

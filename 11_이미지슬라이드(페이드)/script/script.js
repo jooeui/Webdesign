@@ -32,9 +32,7 @@ jQuery(document).ready(function(){
         $(".layer-bg").hide();
     });
     
-    /* 이미지 슬라이드 */
-    var current = 0;
-    
+    /* 이미지 슬라이드 */    
     $(".slideList div:gt(0)").hide();
     
     setInterval(function(){
