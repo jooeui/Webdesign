@@ -187,6 +187,9 @@ header > .top {
     width: 76px;
     object-fit: cover;
 }
+.gallery li:hover {
+    opacity: 0.5;
+}
 .shortcut {
     position: relative;
     float: left;
@@ -214,6 +217,59 @@ header > .top {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.sctext:hover{
+    opacity: 0.5;
+}
+/* modal */
+#modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+    display: none;
+}
+#modal.active {
+    display: block;
+}
+.modal_up {
+    width: 400px;
+    height: 300px;
+    position: fixed;
+    left: 40%;
+    top: 20%;
+    background-color: #ffffff;
+}
+.uptitle {
+    margin-top: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.upbody {
+    padding: 30px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+}
+.btn {
+    padding: 5px;
+    height: 20px;
+    width: 80px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    background: #cccccc;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
 
 /* footer */
 footer {
@@ -223,24 +279,55 @@ footer > .bottom {
     float: left;
     height: 100px;
     width: 800px;
+    background-color: #ababab;
 }
 .bottom > .copy {
     float: left;
     height: 100px;
     width: 600px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 100px;
 }
 .bottom > .site {
     float: right;
     height: 100px;
     width: 200px;
 }
+/* sns */
 .site > .sns {
     float: right;
     height: 50px;
-    width: 200px;
+    width: 100%;
+    margin: 5px 0;
 }
+.sns ul {
+    text-align: center;
+    height: 50px;
+    width: 100%;
+}
+.sns ul li {
+    display: inline-block;
+}
+.sns img {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.sns img:hover{
+    opacity: 0.5;
+}
+/* familysite */
 .site > .familysite {
     float: right;
-    height: 50px;
-    width: 200px;
+    height: 20px;
+    width: 180px;
+    margin: 5px 10px 10px;
+}
+.familysite select {
+    float: right;
+    height: 20px;
+    width: 100%;
+    font-size: 12px;
 }

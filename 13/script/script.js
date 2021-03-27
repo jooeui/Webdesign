@@ -12,5 +12,11 @@ jQuery(document).ready(function() {
         .next('a').fadeIn()
         .end().appendTo('.imgslide'); 
     }, 3000);
+    
+    $(".notice li:first").click(function(){
+        $("#modal").addClass("active");
+    });
+    $(".btn").click(function(){
+        $("#modal").removeClass("active");
+    });
 });
-
